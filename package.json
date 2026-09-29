@@ -1,0 +1,13 @@
+{
+  "name": "httsim",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Learn HTTP-based protocols (OAuth 2.0, OIDC, ...) by implementing them against a fake browser",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js"
+  },
+  "engines": {
+    "node": ">=16"
+  }
+}

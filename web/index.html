@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>HTTSim</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header>
+  <div class="row">
+    <span class="brand">HTTSim</span>
+    <select id="level" title="level"></select>
+    <button id="reset" title="reset this run">↺ reset</button>
+    <span class="spacer"></span>
+    <button id="mission-btn" title="mission brief">mission</button>
+  </div>
+  <div class="row">
+    <span class="chip" id="chip">○ idle</span>
+    <input id="address" spellcheck="false" autocomplete="off" placeholder="http://…">
+  </div>
+</header>
+
+<main id="stage"><iframe id="view" title="page"></iframe></main>
+
+<div id="pending" class="hidden">
+  <span class="method" id="p-method"></span>
+  <span class="url" id="p-url"></span>
+  <details id="p-detail" class="hidden"><summary>body</summary><pre id="p-body"></pre></details>
+  <span class="spacer"></span>
+  <button id="send">send ⏎</button>
+</div>
+
+<section id="console"></section>
+
+<aside id="mission" class="hidden">
+  <div class="row"><b>mission</b><span class="spacer"></span><button id="mission-close">×</button></div>
+  <div id="docs"></div>
+  <h3>checks</h3>
+  <div id="checks"></div>
+</aside>
+
+<script src="/app.js"></script>
+</body>
+</html>
